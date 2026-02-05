@@ -1,0 +1,202 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36" version="29.3.7">
+  <diagram name="Kütüphane Sistemi - Tam UML" id="JpsUlAls980uf_n_HKBE">
+    <mxGraphModel dx="1026" dy="516" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="mipBTFOTrGN0tX4gGyvR-2" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fillColor=#E1F5FE;strokeColor=#01579B;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;Person&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getName(): String&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getId(): int&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getContact(): String&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ display(): void&lt;/p&gt;" vertex="1">
+          <mxGeometry height="140" width="200" x="800" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="mipBTFOTrGN0tX4gGyvR-3" parent="1" style="html=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#333333;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Reader&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- readerId: int&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- name: String&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- contact: String&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- memberRecord: MemberRecord&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ borrowBook(Book): boolean&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ returnBook(Book): void&lt;/p&gt;" vertex="1">
+          <mxGeometry height="160" width="240" x="600" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="mipBTFOTrGN0tX4gGyvR-4" parent="1" style="html=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#333333;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Librarian&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- librarianId: int&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- name: String&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- position: String&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ addBook(Book): void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ removeBook(Book): void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ processTransaction(): void&lt;/p&gt;" vertex="1">
+          <mxGeometry height="160" width="240" x="1000" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="mipBTFOTrGN0tX4gGyvR-5" parent="1" style="html=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#333333;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Student&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- studentId: String&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- department: String&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- year: int&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getMaxBorrowLimit(): int&lt;/p&gt;" vertex="1">
+          <mxGeometry height="130" width="200" x="500" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="mipBTFOTrGN0tX4gGyvR-6" parent="1" style="html=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#333333;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Faculty&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- employeeId: String&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- department: String&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- title: String&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getMaxBorrowLimit(): int&lt;/p&gt;" vertex="1">
+          <mxGeometry height="130" width="200" x="750" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="mipBTFOTrGN0tX4gGyvR-7" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fillColor=#FFF9C4;strokeColor=#F57F17;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;abstract&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;Book&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- id: int&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- title: String&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- isbn: String&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- authors: List&amp;lt;Author&amp;gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- price: double&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- isAvailable: boolean&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getRentalPrice(): double&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ display(): void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ setAvailability(boolean): void&lt;/p&gt;" vertex="1">
+          <mxGeometry height="220" width="240" x="40" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="mipBTFOTrGN0tX4gGyvR-8" parent="1" style="html=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#333333;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Journal&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- issn: String&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- issueNumber: int&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- publisher: String&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getRentalPrice(): double&lt;/p&gt;" vertex="1">
+          <mxGeometry height="130" width="200" x="330" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="mipBTFOTrGN0tX4gGyvR-9" parent="1" style="html=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#333333;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;StudyBook&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- subject: String&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- level: int&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- edition: int&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getLevelDescription(): String&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getRentalPrice(): double&lt;/p&gt;" vertex="1">
+          <mxGeometry height="140" width="200" x="320" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="mipBTFOTrGN0tX4gGyvR-10" parent="1" style="html=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#333333;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Magazine&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- month: Month&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- year: int&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- category: String&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getRentalPrice(): double&lt;/p&gt;" vertex="1">
+          <mxGeometry height="130" width="200" x="60" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="mipBTFOTrGN0tX4gGyvR-11" parent="1" style="html=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#333333;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Author&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- authorId: int&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- name: String&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- nationality: String&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- birthYear: int&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getBooks(): List&amp;lt;Book&amp;gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ display(): void&lt;/p&gt;" vertex="1">
+          <mxGeometry height="160" width="200" x="40" y="760" as="geometry" />
+        </mxCell>
+        <mxCell id="mipBTFOTrGN0tX4gGyvR-12" parent="1" style="html=1;whiteSpace=wrap;fillColor=#C8E6C9;strokeColor=#1B5E20;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Library&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- name: String&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- address: String&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- books: List&amp;lt;Book&amp;gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- members: List&amp;lt;Reader&amp;gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- librarians: List&amp;lt;Librarian&amp;gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- catalog: Catalog&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ addBook(Book): void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ removeBook(Book): void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ registerMember(Reader): void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ searchBook(String): Book&lt;/p&gt;" vertex="1">
+          <mxGeometry height="240" width="260" x="1340" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="mipBTFOTrGN0tX4gGyvR-13" parent="1" style="html=1;whiteSpace=wrap;fillColor=#FFE0B2;strokeColor=#E65100;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Borrowing&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- transactionId: int&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- book: Book&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- member: Reader&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- borrowDate: LocalDate&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- dueDate: LocalDate&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- returnDate: LocalDate&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- status: BorrowStatus&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ isOverdue(): boolean&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ calculateFine(): double&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ returnBook(): void&lt;/p&gt;" vertex="1">
+          <mxGeometry height="240" width="240" x="580" y="760" as="geometry" />
+        </mxCell>
+        <mxCell id="mipBTFOTrGN0tX4gGyvR-14" parent="1" style="html=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#333333;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;MemberRecord&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- memberId: int&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- type: MemberType&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- dateOfMembership: LocalDate&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- borrowedBooks: List&amp;lt;Borrowing&amp;gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- maxBorrowLimit: int&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ canBorrowMore(): boolean&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ addBorrowing(Borrowing): void&lt;/p&gt;" vertex="1">
+          <mxGeometry height="200" width="260" x="880" y="760" as="geometry" />
+        </mxCell>
+        <mxCell id="mipBTFOTrGN0tX4gGyvR-15" parent="1" style="html=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#333333;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Catalog&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- books: Map&amp;lt;Integer, Book&amp;gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ searchByTitle(String): List&amp;lt;Book&amp;gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ searchByAuthor(String): List&amp;lt;Book&amp;gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ searchByISBN(String): Book&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ addBook(Book): void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ removeBook(Book): void&lt;/p&gt;" vertex="1">
+          <mxGeometry height="160" width="260" x="1650" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="mipBTFOTrGN0tX4gGyvR-16" parent="1" style="html=1;whiteSpace=wrap;fillColor=#F8BBD0;strokeColor=#880E4F;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;enumeration&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;BorrowStatus&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;BORROWED&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;RETURNED&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;OVERDUE&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;LOST&lt;/p&gt;" vertex="1">
+          <mxGeometry height="130" width="160" x="300" y="840" as="geometry" />
+        </mxCell>
+        <mxCell id="mipBTFOTrGN0tX4gGyvR-17" parent="1" style="html=1;whiteSpace=wrap;fillColor=#F8BBD0;strokeColor=#880E4F;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;enumeration&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;MemberType&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;STUDENT&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;FACULTY&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;GUEST&lt;/p&gt;" vertex="1">
+          <mxGeometry height="110" width="160" x="1210" y="850" as="geometry" />
+        </mxCell>
+        <mxCell id="mipBTFOTrGN0tX4gGyvR-18" edge="1" parent="1" source="mipBTFOTrGN0tX4gGyvR-3" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;" target="mipBTFOTrGN0tX4gGyvR-2" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="720" y="270" as="sourcePoint" />
+            <mxPoint x="900" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mipBTFOTrGN0tX4gGyvR-19" edge="1" parent="1" source="mipBTFOTrGN0tX4gGyvR-4" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;" target="mipBTFOTrGN0tX4gGyvR-2" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="1120" y="270" as="sourcePoint" />
+            <mxPoint x="900" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mipBTFOTrGN0tX4gGyvR-20" edge="1" parent="1" source="mipBTFOTrGN0tX4gGyvR-5" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;" target="mipBTFOTrGN0tX4gGyvR-3" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="600" y="530" as="sourcePoint" />
+            <mxPoint x="720" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mipBTFOTrGN0tX4gGyvR-21" edge="1" parent="1" source="mipBTFOTrGN0tX4gGyvR-6" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;" target="mipBTFOTrGN0tX4gGyvR-3" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="850" y="530" as="sourcePoint" />
+            <mxPoint x="720" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mipBTFOTrGN0tX4gGyvR-22" edge="1" parent="1" source="mipBTFOTrGN0tX4gGyvR-8" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" target="mipBTFOTrGN0tX4gGyvR-7" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="320" y="345" as="sourcePoint" />
+            <mxPoint x="290" y="335" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mipBTFOTrGN0tX4gGyvR-23" edge="1" parent="1" source="mipBTFOTrGN0tX4gGyvR-9" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="mipBTFOTrGN0tX4gGyvR-7" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="320" y="520" as="sourcePoint" />
+            <mxPoint x="290" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mipBTFOTrGN0tX4gGyvR-24" edge="1" parent="1" source="mipBTFOTrGN0tX4gGyvR-10" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="mipBTFOTrGN0tX4gGyvR-7" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="160" y="550" as="sourcePoint" />
+            <mxPoint x="160" y="510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mipBTFOTrGN0tX4gGyvR-25" edge="1" parent="1" source="mipBTFOTrGN0tX4gGyvR-7" style="endArrow=open;html=1;endSize=12;startArrow=none;startSize=14;startFill=0;edgeStyle=orthogonalEdgeStyle;rounded=0;entryX=0.044;entryY=0.006;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" target="mipBTFOTrGN0tX4gGyvR-11" value="1..*">
+          <mxGeometry relative="1" x="-1" y="3" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="100" y="530" />
+              <mxPoint x="50" y="530" />
+              <mxPoint x="50" y="761" />
+            </Array>
+            <mxPoint x="100" y="540" as="sourcePoint" />
+            <mxPoint x="50" y="750" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mipBTFOTrGN0tX4gGyvR-26" edge="1" parent="1" source="mipBTFOTrGN0tX4gGyvR-3" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=1;edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="mipBTFOTrGN0tX4gGyvR-14" value="1">
+          <mxGeometry relative="1" x="-1" y="3" as="geometry">
+            <Array as="points">
+              <mxPoint x="720" y="700" />
+              <mxPoint x="1010" y="700" />
+            </Array>
+            <mxPoint x="720" y="450" as="sourcePoint" />
+            <mxPoint x="1010" y="750" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mipBTFOTrGN0tX4gGyvR-27" edge="1" parent="1" style="endArrow=open;html=1;endSize=12;startArrow=none;startSize=14;startFill=0;edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" target="mipBTFOTrGN0tX4gGyvR-7" value="1">
+          <mxGeometry relative="1" x="1" y="3" as="geometry">
+            <Array as="points">
+              <mxPoint x="270" y="830" />
+              <mxPoint x="270" y="540" />
+              <mxPoint x="220" y="540" />
+            </Array>
+            <mxPoint x="580" y="830" as="sourcePoint" />
+            <mxPoint x="220" y="530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mipBTFOTrGN0tX4gGyvR-28" edge="1" parent="1" source="mipBTFOTrGN0tX4gGyvR-13" style="endArrow=open;html=1;endSize=12;startArrow=none;startSize=14;startFill=0;edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="mipBTFOTrGN0tX4gGyvR-3" value="1">
+          <mxGeometry relative="1" x="1" y="3" as="geometry">
+            <mxPoint x="700" y="750" as="sourcePoint" />
+            <mxPoint x="720" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mipBTFOTrGN0tX4gGyvR-29" edge="1" parent="1" source="mipBTFOTrGN0tX4gGyvR-12" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=1;edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="mipBTFOTrGN0tX4gGyvR-7" value="*">
+          <mxGeometry relative="1" x="-1" y="3" as="geometry">
+            <Array as="points">
+              <mxPoint x="1300" y="160" />
+              <mxPoint x="1300" y="200" />
+              <mxPoint x="160" y="200" />
+            </Array>
+            <mxPoint x="1330" y="160" as="sourcePoint" />
+            <mxPoint x="160" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mipBTFOTrGN0tX4gGyvR-30" edge="1" parent="1" source="mipBTFOTrGN0tX4gGyvR-12" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=1;edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0;exitY=0.25;exitDx=0;exitDy=0;" target="mipBTFOTrGN0tX4gGyvR-3" value="*">
+          <mxGeometry relative="1" x="-1" y="3" as="geometry">
+            <Array as="points">
+              <mxPoint x="1280" y="100" />
+              <mxPoint x="1280" y="470" />
+              <mxPoint x="820" y="470" />
+            </Array>
+            <mxPoint x="1330" y="100" as="sourcePoint" />
+            <mxPoint x="850" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mipBTFOTrGN0tX4gGyvR-31" edge="1" parent="1" source="mipBTFOTrGN0tX4gGyvR-12" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=0;edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" target="mipBTFOTrGN0tX4gGyvR-4" value="*">
+          <mxGeometry relative="1" x="-1" y="3" as="geometry">
+            <Array as="points">
+              <mxPoint x="1405" y="20" />
+              <mxPoint x="1260" y="20" />
+              <mxPoint x="1260" y="320" />
+            </Array>
+            <mxPoint x="1400" y="30" as="sourcePoint" />
+            <mxPoint x="1250" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mipBTFOTrGN0tX4gGyvR-32" edge="1" parent="1" source="mipBTFOTrGN0tX4gGyvR-12" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=1;rounded=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" value="1">
+          <mxGeometry relative="1" x="-1" y="3" as="geometry">
+            <mxPoint x="1610" y="100" as="sourcePoint" />
+            <mxPoint x="1650" y="100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mipBTFOTrGN0tX4gGyvR-33" edge="1" parent="1" style="endArrow=open;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="mipBTFOTrGN0tX4gGyvR-16" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="578" y="903" as="sourcePoint" />
+            <mxPoint x="470" y="905" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mipBTFOTrGN0tX4gGyvR-34" edge="1" parent="1" source="mipBTFOTrGN0tX4gGyvR-14" style="endArrow=open;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=-0.013;entryY=0.559;entryDx=0;entryDy=0;entryPerimeter=0;" target="mipBTFOTrGN0tX4gGyvR-17" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1150" y="910" as="sourcePoint" />
+            <mxPoint x="1190" y="895" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mipBTFOTrGN0tX4gGyvR-35" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" value="implements" vertex="1">
+          <mxGeometry height="20" width="80" x="750" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="mipBTFOTrGN0tX4gGyvR-36" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" value="implements" vertex="1">
+          <mxGeometry height="20" width="80" x="970" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="mipBTFOTrGN0tX4gGyvR-37" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" value="extends" vertex="1">
+          <mxGeometry height="20" width="60" x="620" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="mipBTFOTrGN0tX4gGyvR-38" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" value="extends" vertex="1">
+          <mxGeometry height="20" width="60" x="760" y="480" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
